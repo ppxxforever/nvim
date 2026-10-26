@@ -22,8 +22,10 @@ vim.opt.scrolloff = 10
 vim.opt.wrap = false
 vim.opt.signcolumn = "yes" -- 始终显示符号列，避免代码跳动
 
--- 剪贴板：与系统剪贴板同步（在支持的平台上）
-vim.opt.clipboard = "unnamedplus"
+-- 剪贴板：不要 unnamedplus
+-- 开了它之后 d / c / x / 可视模式 p 都会往系统剪贴板里写，刚复制的东西很容易被顶掉。
+-- 现在只有显式 <leader>y / <leader>P 才碰系统剪贴板（见 config/keymaps.lua）
+vim.opt.clipboard = ""
 
 -- 其他实用设置
 vim.opt.mouse = "a"           -- 启用鼠标
