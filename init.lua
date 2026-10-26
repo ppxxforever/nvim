@@ -12,6 +12,7 @@ require("plugins.trouble") -- 诊断/引用常驻列表：mini.pick 只能一次
 require("plugins.gitsigns") -- blame + hunk 暂存：mini.diff 没有行内 blame
 
 require("plugins.bufferline") -- mini 没有 buffer 标签栏
+require("plugins.terminal") -- 终端：<leader>tt 底部 / <leader>tf 浮动
 require("plugins.treesitter")
 require("plugins.blink") -- 补全：mini.completion 太弱
 require("plugins.mason")
