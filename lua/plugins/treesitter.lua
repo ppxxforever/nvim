@@ -4,7 +4,6 @@ vim.pack.add({ "https://github.com/nvim-treesitter/nvim-treesitter" })
 local langs = {
   "lua",
   "python",
-  "javascript",
   "vim",
   -- markdown 写作：markdown 负责块级结构，markdown_inline 负责行内强调/链接/代码
   "markdown",
@@ -15,6 +14,16 @@ local langs = {
   "yaml",
   "css",
   "html",
+  -- 前端
+  "javascript",
+  "typescript",
+  "tsx",
+  "jsdoc",
+  -- 编译型
+  "c",
+  "cpp",
+  "c_sharp",
+  "java",
   -- C3（c3lang/tree-sitter-c3）
   "c3",
 }

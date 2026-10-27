@@ -1,4 +1,5 @@
 -- mini.nvim 负责基础体验；下列 4 个非 mini 插件是功能优先的选择
+require("config.env") -- 运行时 PATH（java / dotnet），必须在插件之前
 require("config.options")
 require("config.keymaps")
 
@@ -14,7 +15,7 @@ require("plugins.gitsigns") -- blame + hunk 暂存：mini.diff 没有行内 blam
 require("plugins.bufferline") -- mini 没有 buffer 标签栏
 require("plugins.terminal") -- 终端：<leader>tt 底部 / <leader>tf 浮动
 require("plugins.treesitter")
-require("plugins.blink") -- 补全：mini.completion 太弱
+require("plugins.blink") -- 补全：mini.completion 太弱（要在 lspconfig 之前，好把 capabilities 交给 vim.lsp.config）
 require("plugins.mason")
 require("plugins.lspconfig")
 require("plugins.conform") -- 格式化：stylua / ruff_format / prettier

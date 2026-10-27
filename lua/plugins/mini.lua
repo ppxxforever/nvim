@@ -152,6 +152,7 @@ clue.setup({
     clue.gen_clues.square_brackets(),
     { mode = "n", keys = "<Leader>b", desc = "+buffer" },
     { mode = "n", keys = "<Leader>c", desc = "+code" },
+    { mode = "n", keys = "<Leader>d", desc = "+debug / 诊断" },
     { mode = "n", keys = "<Leader>f", desc = "+find" },
     { mode = "n", keys = "<Leader>g", desc = "+git" },
     { mode = "n", keys = "<Leader>h", desc = "+hunk" },
